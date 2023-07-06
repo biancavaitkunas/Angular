@@ -1,0 +1,28 @@
+.linkSelected {
+  font-weight: bold;
+  background-color: #85a791;
+}
+
+a:link,
+a:visited {
+  background-color: rgb(167, 196, 186);
+  border-radius: 15px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 150px;
+  margin-right: 10px;
+}
+
+a:hover,
+a:active {
+  background-color: #85a791;
+  transform: scale(1.03);
+}
+
+a {
+  display: flex;
+  display: inline-block;
+  margin: 0 5px;
+}
