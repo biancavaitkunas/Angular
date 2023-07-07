@@ -18,6 +18,7 @@ import { ExemploMicroondasComponent } from './exemplo-microondas/exemplo-microon
 import { ExemploPaiFilhoComponent } from './exemplo-pai-filho/exemplo-pai-filho.component';
 import { ExemploFilhoPaiComponent } from './exemplo-filho-pai/exemplo-filho-pai.component';
 import { ExemploServicesComponent } from './exemplo-services/exemplo-services.component';
+import { InvertePipe } from './inverte.pipe';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ExemploServicesComponent } from './exemplo-services/exemplo-services.co
     ExemploPaiFilhoComponent,
     ExemploFilhoPaiComponent,
     ExemploServicesComponent,
+    InvertePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

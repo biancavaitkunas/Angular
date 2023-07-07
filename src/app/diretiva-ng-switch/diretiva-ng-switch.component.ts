@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./diretiva-ng-switch.component.scss']
 })
 export class DiretivaNgSwitchComponent {
+  public valor: number = 1;
 
 }

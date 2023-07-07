@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class DiretivaNgClassComponent {
 
+  public valor: boolean = true;
+
+  public trcoca(){
+    setInterval(()=> this.valor = !this.valor, 1000);
+  }
+
+  /*public valor: boolean = true;
+
+   ngOnInit(): void {
+       setInterval(() =>{
+        this.valor = !this.valor;
+       }, 1000);
+   }*/
+
 }

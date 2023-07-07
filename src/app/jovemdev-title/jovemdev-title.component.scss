@@ -11,25 +11,3 @@ header {
   width: 100%;
   font-family: 'Century Gothic', sans-serif;
 }
-
-
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #000;
-  background-color: #eee;
-}
-
-nav ul li a:hover {
-  background-color: #ccc;
-}
-
-.hide {
-  display: none;
-}

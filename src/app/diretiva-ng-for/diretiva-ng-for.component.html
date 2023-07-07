@@ -1,1 +1,59 @@
-<p>diretiva-ng-for works!</p>
+<!-- <h1>Exemplo ngFor</h1>
+ 
+<ul>
+  <li style="margin: 3px;" *ngFor="let pessoa of listaPessoas" (click)="clickPessoa(pessoa)">
+    Nome: {{pessoa.nome}} - Idade: {{pessoa.idade}}</li>
+</ul>
+
+<table border="1" cellSpacing="0" width="30%">
+  <tr>
+    <td align="center"><b>Nome</b></td>
+    <td align="center"><b>Idade</b></td>
+  </tr>
+  <tr *ngFor="let pessoaDaLista of listaPessoas" (click)="clickPessoa(pessoaDaLista)">
+    <td>{{pessoaDaLista.nome}}</td>
+    <td>{{pessoaDaLista.idade}}</td>
+  </tr>
+</table>
+<hr/>
+<button (click)="addPessoa()">Adiciona Pessoa</button>
+<button (click)="removePessoa()">Remove Pessoa</button>
+
+<br>
+<div *ngIf="nomeSelecionado != ''">
+  <h2>{{nomeSelecionado}}</h2>
+  <h2>{{idadeSelecionado}}</h2>
+</div> -->
+
+<div class="container">
+  <table>
+    <tr>
+      <td>Produto</td>
+      <td>Preço</td>
+      <td>Quantidade</td>
+    </tr>
+    <tr *ngFor="let item of listaCompras; let i = index">
+      <td>{{ item }}</td>
+      <td>{{ item }}</td>
+      <td>{{ item }}</td>
+      
+      <td>
+        <input
+          type="text"
+          name="quantidade"
+          id="produto"
+          [(ngModel)]="quantidade"
+        />
+      </td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <input type="text" [(ngModel)]="produto" />
+  <input type="text" [(ngModel)]="preco" />
+  <input type="text" [(ngModel)]="quantidade" />
+  <button (click)="addCompra()">Nova Compra</button>
+  <button (click)="removeCompra()">Remover Compra</button>
+  <button (click)="removeCompra()">Salvar</button>
+</div>

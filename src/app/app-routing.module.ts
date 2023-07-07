@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'ngClass', component: DiretivaNgClassComponent },
   { path: 'ngFor', component: DiretivaNgForComponent },
   { path: 'ngStyle', component: DiretivaNgStyleComponent },
-  { path: 'ngModel', component: DiretivaNgModelComponent },
+  { path: 'ngdMoel', component: DiretivaNgModelComponent },
   { path: 'ngSwitch', component: DiretivaNgSwitchComponent },
   { path: 'ngIf', component: DiretivaNgIfComponent },
   { path: 'exemploPipes', component: ExemploPipesComponent },

@@ -1,1 +1,33 @@
-<p>diretiva-ng-if works!</p>
+<!-- <h1>Exemplo ngIf</h1>
+
+<div class="containerPai">
+    <div *ngIf="containerAmarelo" class="divAmarelo"></div>
+    <div *ngIf="containerVermelho" class="divVermelho"></div>
+</div>
+
+<button (click)="clickAmarelo()">Amarelo</button>
+<button (click)="clickVermelho()">Vermelho</button>-->
+
+<div class="container">
+    <div *ngIf="containerInstagram">
+        <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png" class="imagem">
+        <div class="link" href="https://www.instagram.com/"></div>
+    </div>
+    <div *ngIf="containerWhatsapp">
+        <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-png.png" class="imagem">
+        <div class="link" href="https://www.whatsapp.com/?lang=pt_br"></div>
+    </div>
+    <div *ngIf="containerTwitter">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" class="imagem">
+        <div class="link" href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dpt"></div>
+    </div>
+    <div *ngIf="containerLinkedin">
+        <img src="https://logospng.org/download/linkedin/logo-linkedin-icon-4096.png" class="imagem">
+        <div class="link" href="https://br.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"></div>
+    </div>
+</div>
+
+<button (click)="clickInstagram()" class="divInstagram">Instagram</button>
+<button (click)="clickWhatsapp()" class="divWhatsapp">WhatsApp</button>
+<button (click)="clickTwitter()" class="divTwitter">Twitter</button>
+<button (click)="clickLinkedin()" class="divLinkedin">LinkedIn</button>
