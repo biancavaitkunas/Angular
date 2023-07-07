@@ -1,19 +1,31 @@
-<app-jovemdev-title></app-jovemdev-title>
-<a routerLink="/exemploBinding" routerLinkActive="linkSelected"
-  >ExemploBinding</a
->
-<a routerLink="/imc" routerLinkActive="linkSelected">IMC</a>
-<a routerLink="/ngClass" routerLinkActive="linkSelected">Ng Class</a>
-<a routerLink="/ngFor" routerLinkActive="linkSelected">Ng For</a>
-<a routerLink="/ngStyle" routerLinkActive="linkSelected">Ng Style</a>
-<a routerLink="/ngModel" routerLinkActive="linkSelected">Ng Model</a>
-<a routerLink="/ngSwitch" routerLinkActive="linkSelected">Ng Switch</a>
-<a routerLink="/ngIf" routerLinkActive="linkSelected">Ng If</a>
-<a routerLink="/exemploPipes" routerLinkActive="linkSelected">Pipes</a>
-<a routerLink="/exemploMicroondas" routerLinkActive="linkSelected">Microondas</a>
-<a routerLink="/exemploPai->Filho" routerLinkActive="linkSelected">Pai->Filho</a>
-<a routerLink="/exemploFilho->Pai" routerLinkActive="linkSelected">Filho->Pai</a>
-<a routerLink="/exemploServices" routerLinkActive="linkSelected">Services</a>
+<html>
+  <app-jovemdev-title></app-jovemdev-title>
 
+  <body>
+    <div class="sidebar">
+        <ul>
+          <li><a routerLink="/exemploBinding" routerLinkActive="linkSelected">ExemploBinding</a></li>
+          <li><a routerLink="/imc" routerLinkActive="linkSelected">IMC</a></li>
+          <li><a routerLink="/ngClass" routerLinkActive="linkSelected">Ng Class</a></li>
+          <li><a routerLink="/ngFor" routerLinkActive="linkSelected">Ng For</a></li>
+          <li><a routerLink="/ngStyle" routerLinkActive="linkSelected">Ng Style</a></li>
+          <li><a routerLink="/ngModel" routerLinkActive="linkSelected">Ng Model</a></li>
+          <li><a routerLink="/ngSwitch" routerLinkActive="linkSelected">Ng Switch</a></li>
+          <li><a routerLink="/ngIf" routerLinkActive="linkSelected">Ng If</a></li>
+          <li><a routerLink="/exemploPipes" routerLinkActive="linkSelected">Pipes</a></li>
+          <li><a routerLink="/exemploMicroondas" routerLinkActive="linkSelected">Microondas</a></li>
+          <li><a routerLink="/exemploPai->Filho" routerLinkActive="linkSelected">Pai->Filho</a></li>
+          <li><a routerLink="/exemploFilho->Pai" routerLinkActive="linkSelected">Filho->Pai</a></li>
+          <li><a routerLink="/exemploServices" routerLinkActive="linkSelected">Services</a></li>
+        </ul>
+    </div>
+    <div class="content">
 
-<router-outlet></router-outlet>
+    </div>
+  </body>
+  
+  
+  
+  
+  <router-outlet></router-outlet>
+</html>

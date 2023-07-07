@@ -3,7 +3,7 @@
 
   <div class="box">
     <div class="form_grupo">
-      <label for="nome" class="form_label">Nome:</label>
+      <label for="nome" class="form_label">Nome: </label>
       <input
         type="text"
         id="nome"
@@ -16,7 +16,7 @@
     </div>
 
     <div class="form_grupo radio_container">
-      <label for="rdSexo" class="form_label">Sexo:</label>
+      <label for="rdSexo" class="form_label">Sexo: </label>
 
       <input
         class="form-check-input"
@@ -38,7 +38,7 @@
     </div>
 
     <div class="form_grupo">
-      <label for="txtPeso" class="form_label">Peso:</label>
+      <label for="txtPeso" class="form_label">Peso: </label>
       <input
         type="number"
         id="txtPeso"
@@ -50,7 +50,7 @@
     </div>
 
     <div class="form_grupo">
-      <label for="txtAltura" class="form_label">Altura:</label>
+      <label for="txtAltura" class="form_label">Altura: </label>
       <input
         type="text"
         id="txtAltura"
@@ -62,7 +62,7 @@
     </div>
 
     <button
-      (click)="calculaImc()"
+      (click)="calculaImc()" [disabled]="peso == ''"
       type="submit"
       name="Submit"
       class="submit_btn btn btn-primary"
@@ -76,20 +76,11 @@
         id="txtDados"
         class="form_input_dados"
         name="txtDados"
-        rows="5"
-        cols="50"
+        rows="3"
+        cols="30"
         readonly
       ></textarea>
     </div>
-    <div class="form_grupo resultado">
-      <textarea
-        id="txtAvaliacao"
-        class="form_input_resultado classificacao"
-        name="txtAvaliacao"
-        rows="2"
-        cols="50"
-        readonly
-      ></textarea>
-    </div>
+    <div class="form_grupo form_input_resultado classificacao resultado" id="txtAvaliacao" name="txtAvaliacao"></div>
   </div>
 </div>

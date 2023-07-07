@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-jovemdev-title',
   templateUrl: './jovemdev-title.component.html',
@@ -11,9 +12,9 @@ export class JovemdevTitleComponent implements OnInit {
   ngOnInit(): void {
     let h = new Date().getHours();
     if (h < 12) {
-      this.title = this.title + 'Matutino';
+      this.title = this.title + ' Matutino';
     } else {
-      this.title = this.title + 'Vespertino';
+      this.title = this.title + ' Vespertino';
     }
   }
 }

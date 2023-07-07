@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class ImcComponent {
   public nome = '';
   public sexo = '';
-  public peso = 0;
-  public altura = 0;
+  public peso = '';
+  public altura = '';
 
   public calculaImc() {
     const imc = Number(this.peso) / (Number(this.altura) * Number(this.altura));
@@ -21,7 +21,7 @@ export class ImcComponent {
 
     const resultado = document.getElementById(
       'txtAvaliacao'
-    ) as HTMLTextAreaElement;
+    ) as HTMLTextAreaElement; 
 
     const msg: string = `Nome: ${this.nome}\nSexo: ${this.sexo}\nAltura: ${this.altura}\nPeso: ${this.peso}\nIMC: ${imc}`;
     const dados: string = `${avaliacao}`;
