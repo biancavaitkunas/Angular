@@ -1,3 +1,64 @@
+<div class="container">
+
+  <table>
+    <thead>
+      <tr class="labels">
+        <th>Item</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        <th>Remover</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listaItens; let i = index" class="resultados">
+        <td>{{ item.nome }}</td>
+        <td>{{ item.preco }}</td>
+        <td>{{ item.quantidade }}</td>
+        <td>
+          <button (click)="removerItem(i)">Remover</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class="divinput">
+  <input type="text" [(ngModel)]="novoItem.nome" placeholder="Item">
+  <input type="number" [(ngModel)]="novoItem.preco" placeholder="Preço">
+  <input type="number" [(ngModel)]="novoItem.quantidade" placeholder="Quantidade">
+  <button (click)="adicionarItem()">Salvar</button>
+</div>
+  
+  <!--<table>
+    <tr>
+      <td>Produto</td>
+      <td>Preço</td>
+      <td>Quantidade</td>
+    </tr>
+    <tr *ngFor="let item of listaCompras; let i = index">
+      <td>{{ item }}</td>
+      <td>{{ item }}</td>
+      <td>{{ item }}</td>
+      
+      <td>
+        <input
+          type="text"
+          name="quantidade"
+          id="produto"
+          [(ngModel)]="quantidade"
+        />
+      </td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <input type="text" [(ngModel)]="nome" />
+  <input type="text" [(ngModel)]="preco" />
+  <input type="text" [(ngModel)]="quantidade" />
+  <button (click)="addCompra()">Nova Compra</button>
+  <button (click)="removeCompra()">Remover Compra</button>
+  <button (click)="removeCompra()">Salvar</button>
+</div> -->
+
 <!-- <h1>Exemplo ngFor</h1>
  
 <ul>
@@ -25,35 +86,4 @@
   <h2>{{idadeSelecionado}}</h2>
 </div> -->
 
-<div class="container">
-  <table>
-    <tr>
-      <td>Produto</td>
-      <td>Preço</td>
-      <td>Quantidade</td>
-    </tr>
-    <tr *ngFor="let item of listaCompras; let i = index">
-      <td>{{ item }}</td>
-      <td>{{ item }}</td>
-      <td>{{ item }}</td>
-      
-      <td>
-        <input
-          type="text"
-          name="quantidade"
-          id="produto"
-          [(ngModel)]="quantidade"
-        />
-      </td>
-    </tr>
-  </table>
 
-  <hr />
-
-  <input type="text" [(ngModel)]="produto" />
-  <input type="text" [(ngModel)]="preco" />
-  <input type="text" [(ngModel)]="quantidade" />
-  <button (click)="addCompra()">Nova Compra</button>
-  <button (click)="removeCompra()">Remover Compra</button>
-  <button (click)="removeCompra()">Salvar</button>
-</div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
+
 .container {
   width: 700px;
   margin: auto;
@@ -9,4 +11,42 @@
   padding: 1em;
   border-top: 25px;
   margin-top: 50px;
+  font-family: "Century Gothic";
+  
 }
+
+th {
+  background-color: #e3e4e4;
+}
+
+th, td  {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.divinput{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.divinput input{
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
