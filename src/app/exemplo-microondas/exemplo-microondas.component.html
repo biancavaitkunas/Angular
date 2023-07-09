@@ -1,1 +1,24 @@
-<p>exemplo-microondas works!</p>
+<div class="container">
+
+    <div>
+        <h2>Tempo restante: {{ tempoRestante }} segundos</h2>
+        <!--<input type="number" [(ngModel)]="tempoDefinido" placeholder="Tempo (segundos)" class="painel">-->
+    </div>
+
+    <div>
+        <button (click)="definirTempo(1)">+1min</button>
+        <button (click)="definirTempo(0.5)">+30seg</button>
+        <button (click)="definirTempo(0)">0</button>
+        <button (click)="definirTempo(1)">1</button>
+        <button (click)="definirTempo(2)">2</button>
+        <button (click)="definirTempo(3)">3</button>
+        <button (click)="definirTempo(4)">4</button>
+        <button (click)="definirTempo(5)">5</button>
+        <button (click)="definirTempo(6)">6</button>
+        <button (click)="definirTempo(7)">7</button>
+        <button (click)="definirTempo(8)">8</button>
+        <button (click)="definirTempo(9)">9</button>
+        <button (click)="cancelar()" class="cancelar">Cancelar</button>
+        <button (click)="iniciar()">Ligar</button>
+    </div>
+</div>

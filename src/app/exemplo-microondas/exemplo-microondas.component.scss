@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
+
+.container {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-top: 25px;
+    margin-top: 50px;
+    font-family: "Century Gothic";
+    background-color: #d4d6d4;
+    border-radius: 10px;
+}
+
+button {
+    display: inline-block;
+    width: 25%;
+    padding: 9px 5px;
+    background-color: #648f65;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px #f0eded solid;
+    margin-bottom: 5px;
+    font-family: "Century Gothic";
+}
+
+button:hover {
+    background-color: #171717;
+    transform: scale(1.01);
+}
+
+.painel {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border-bottom: 1px #f0eded solid;
+    background-color: #080808;
+    color: #647e30;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'digital-7', sans serif;
+}
+
+.cancelar {
+    background-color: rgb(202, 116, 116);
+}

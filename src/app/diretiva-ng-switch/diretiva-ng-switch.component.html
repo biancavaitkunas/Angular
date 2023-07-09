@@ -1,13 +1,30 @@
-<h1>Exemplo ngSwitch</h1>
+<div class="container">
+  <h1>Exemplo ngSwitch</h1>
+  <h2>Selecione uma cor</h2>
 
-<input type="number"[(ngModel)]="valor">
-<div [ngSwitch]="valor">
-  <p *ngSwitchCase="1"> Domingo</p>
-  <p *ngSwitchCase="2"> Segunda feira</p>
-  <p *ngSwitchCase="3"> Terça feira</p>
-  <p *ngSwitchCase="4"> Quarta feira</p>
-  <p *ngSwitchCase="5"> Quinta feira</p>
-  <p *ngSwitchCase="6"> Sexta feira</p>
-  <p *ngSwitchCase="7"> Sábado</p>
-  <p *ngSwitchDefault> Não representa um dia de semana</p>
+  <div class="opcoes">
+    <div>Opções: </div>
+    <div>1 - Rosa</div>
+    <div>2 - Vermelho</div>
+    <div>3 - Azul</div>
+    <div>4 - Verde</div>
+    <div>5 - Amarelo</div>
+    <div>6 - Roxo</div>
+    <div>7 - Laranja</div>
+  </div>
+  
+
+  <input type="number"[(ngModel)]="cor">
+  <div [ngSwitch]="cor">
+    <p *ngSwitchCase="1" style="background-color: pink">Cor rosa</p>
+    <p *ngSwitchCase="'vermelho'" style="background-color: red"> Segunda feira</p>
+    <p *ngSwitchCase="'azul'" style="background-color: blue"> Terça feira</p>
+    <p *ngSwitchCase="'verde'" style="background-color: green"> Quarta feira</p>
+    <p *ngSwitchCase="'amarelo'" style="background-color: yellow"> Quinta feira</p>
+    <p *ngSwitchCase="'roxo'" style="background-color: purple"> Sexta feira</p>
+    <div *ngSwitchCase="'laranja'" style="background-color: orange">Laranja</div>
+    <p *ngSwitchDefault> Não é uma cor</p>
+  </div>
 </div>
+
+
