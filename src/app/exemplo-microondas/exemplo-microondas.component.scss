@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 
 .container {
-    width: 500px;
+    width: 370px;
+    height: 330px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -9,8 +12,13 @@
     border-top: 25px;
     margin-top: 50px;
     font-family: "Century Gothic";
-    background-color: #d4d6d4;
+    background-color: #cacdd4;
+    box-shadow: 2px 0px 1.5px 0px #bebbbb;
     border-radius: 10px;
+}
+
+.botoes {
+    margin-left: 20%;
 }
 
 button {
@@ -18,32 +26,39 @@ button {
     width: 25%;
     padding: 9px 5px;
     background-color: #648f65;
-    color: white;
+    color: rgb(2, 2, 2);
+    font-size: 13px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    border-bottom: 1px #f0eded solid;
+    border-bottom: 1px #999797 solid;
     margin-bottom: 5px;
+    margin-right: 2px;
     font-family: "Century Gothic";
 }
 
 button:hover {
-    background-color: #171717;
+    background-color: #575656;
     transform: scale(1.01);
 }
 
 .painel {
     width: 100%;
-    height: 100px;
+    height: 70px;
     border-radius: 10px;
-    border-bottom: 1px #f0eded solid;
     background-color: #080808;
-    color: #647e30;
-    font-size: 50px;
+    color: #d4d4d4;
+    font-size: 60px;
     text-align: center;
     font-family: 'digital-7', sans serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .cancelar {
     background-color: rgb(202, 116, 116);
+}
+
+.zerar{
+    background-color: rgb(131, 163, 163);
 }

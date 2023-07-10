@@ -19,6 +19,7 @@ import { ExemploPaiFilhoComponent } from './exemplo-pai-filho/exemplo-pai-filho.
 import { ExemploFilhoPaiComponent } from './exemplo-filho-pai/exemplo-filho-pai.component';
 import { ExemploServicesComponent } from './exemplo-services/exemplo-services.component';
 import { InvertePipe } from './inverte.pipe';
+import { ConverteTempoPipe } from './converte-tempo.pipe';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { InvertePipe } from './inverte.pipe';
     ExemploFilhoPaiComponent,
     ExemploServicesComponent,
     InvertePipe,
+    ConverteTempoPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

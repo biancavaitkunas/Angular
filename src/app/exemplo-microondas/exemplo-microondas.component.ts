@@ -3,42 +3,46 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-exemplo-microondas',
   templateUrl: './exemplo-microondas.component.html',
-  styleUrls: ['./exemplo-microondas.component.scss']
+  styleUrls: ['./exemplo-microondas.component.scss'],
 })
 export class ExemploMicroondasComponent {
-  tempoDefinido: number = 0;
-  tempoRestante: number = 0;
-  timer: any;
+
+  tempo: any;
+  restante: any = 0;
+  tempoAtual: any;
 
   public iniciar(){
-    if (this.tempoDefinido > 0 && !this.timer) {
-      this.tempoRestante = this.tempoDefinido;
-      this.timer = setInterval(() => {
-        if (this.tempoRestante > 0) {
-          this.tempoRestante--;
+    if (this.tempo > 0 && !this.tempoAtual) {
+      this.restante = this.tempo;
+      this.tempoAtual = setInterval(() => {
+        if (this.restante > 0) {
+          this.restante--;
         } else {
           this.cancelar();
-          console.log('Fim!');
         }
       }, 1000);
     }
   }
 
+
+  public addTempo(escolhido: number){
+    if(this.tempo = escolhido){
+      this.restante += escolhido;
+      //this.restante = this.restante.toString() + escolhido.toString();
+    }
+
+  }
+
   public cancelar() {
-    clearInterval(this.timer);
-    this.timer = null;
+    clearInterval(this.tempoAtual);
+    this.tempoAtual = null;
   }
 
   public zerar() {
     this.cancelar();
-    this.tempoDefinido = 0;
-    this.tempoRestante = 0;
+    this.tempo = 0;
+    this.restante = 0;
   }
 
-  public definirTempo(tempo: number) {
-    if (!this.timer) {
-      this.tempoDefinido = tempo;
-    }
-  }
-
+  
 }

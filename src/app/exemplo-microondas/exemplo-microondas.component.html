@@ -1,24 +1,25 @@
 <div class="container">
 
     <div>
-        <h2>Tempo restante: {{ tempoRestante }} segundos</h2>
-        <!--<input type="number" [(ngModel)]="tempoDefinido" placeholder="Tempo (segundos)" class="painel">-->
+        <div class="painel">{{ restante | converteTempo }}</div>
     </div>
 
-    <div>
-        <button (click)="definirTempo(1)">+1min</button>
-        <button (click)="definirTempo(0.5)">+30seg</button>
-        <button (click)="definirTempo(0)">0</button>
-        <button (click)="definirTempo(1)">1</button>
-        <button (click)="definirTempo(2)">2</button>
-        <button (click)="definirTempo(3)">3</button>
-        <button (click)="definirTempo(4)">4</button>
-        <button (click)="definirTempo(5)">5</button>
-        <button (click)="definirTempo(6)">6</button>
-        <button (click)="definirTempo(7)">7</button>
-        <button (click)="definirTempo(8)">8</button>
-        <button (click)="definirTempo(9)">9</button>
+    <div class="botoes">
+        <button (click)="addTempo(60)" class="zerar">+1min</button>
+        <button (click)="addTempo(30)" class="zerar">+30seg</button>
+        <button (click)="addTempo(0)" class="numericas">0</button>
+        <button (click)="addTempo(1)" class="numericas">1</button>
+        <button (click)="addTempo(2)" class="numericas">2</button>
+        <button (click)="addTempo(3)" class="numericas">3</button>
+        <button (click)="addTempo(4)" class="numericas">4</button>
+        <button (click)="addTempo(5)" class="numericas">5</button>
+        <button (click)="addTempo(6)" class="numericas">6</button>
+        <button (click)="addTempo(7)" class="numericas">7</button>
+        <button (click)="addTempo(8)" class="numericas">8</button>
+        <button (click)="addTempo(9)" class="numericas">9</button>
         <button (click)="cancelar()" class="cancelar">Cancelar</button>
         <button (click)="iniciar()">Ligar</button>
+        <button (click)="zerar()" class="zerar">Zerar</button>
+
     </div>
 </div>

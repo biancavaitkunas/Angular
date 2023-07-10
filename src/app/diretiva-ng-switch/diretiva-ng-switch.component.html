@@ -14,16 +14,16 @@
   </div>
   
 
-  <input type="number"[(ngModel)]="cor">
-  <div [ngSwitch]="cor">
-    <p *ngSwitchCase="1" style="background-color: pink">Cor rosa</p>
-    <p *ngSwitchCase="'vermelho'" style="background-color: red"> Segunda feira</p>
-    <p *ngSwitchCase="'azul'" style="background-color: blue"> Terça feira</p>
-    <p *ngSwitchCase="'verde'" style="background-color: green"> Quarta feira</p>
-    <p *ngSwitchCase="'amarelo'" style="background-color: yellow"> Quinta feira</p>
-    <p *ngSwitchCase="'roxo'" style="background-color: purple"> Sexta feira</p>
-    <div *ngSwitchCase="'laranja'" style="background-color: orange">Laranja</div>
-    <p *ngSwitchDefault> Não é uma cor</p>
+  <input type="number"[(ngModel)]="cor" class="numero">
+  <div [ngSwitch]="cor" class="boxCores">
+    <p *ngSwitchCase="1" style="background-color: pink">Rosa</p>
+    <p *ngSwitchCase="2" style="background-color: red"> Vermelho</p>
+    <p *ngSwitchCase="3" style="background-color: blue"> Azul</p>
+    <p *ngSwitchCase="4" style="background-color: green"> Verde</p>
+    <p *ngSwitchCase="5" style="background-color: yellow"> Amarelo</p>
+    <p *ngSwitchCase="6" style="background-color: purple"> Roxo</p>
+    <div *ngSwitchCase="7" style="background-color: orange">Laranja</div>
+    <p *ngSwitchDefault> Selecione a cor</p>
   </div>
 </div>
 
