@@ -13,6 +13,11 @@ import { ExemploMicroondasComponent } from './exemplo-microondas/exemplo-microon
 import { ExemploPaiFilhoComponent } from './exemplo-pai-filho/exemplo-pai-filho.component';
 import { ExemploFilhoPaiComponent } from './exemplo-filho-pai/exemplo-filho-pai.component';
 import { ExemploServicesComponent } from './exemplo-services/exemplo-services.component';
+import { CpPaiComponent } from './md-pai-filho/cp-pai/cp-pai.component';
+import { CpPaiComponent as CpPaiComponent2 } from './md-filho-pai/cp-pai/cp-pai.component';
+import { CpAComponent } from './md-service/cp-a/cp-a.component';
+import { CpAgrupadorComponent } from './md-service/cp-agrupador/cp-agrupador.component';
+import { CpTelaComponent } from './atv-modulos/cp-tela/cp-tela.component';
 
 const routes: Routes = [
   { path: 'exemploBinding', component: ExemploBindingComponent },
@@ -20,14 +25,15 @@ const routes: Routes = [
   { path: 'ngClass', component: DiretivaNgClassComponent },
   { path: 'ngFor', component: DiretivaNgForComponent },
   { path: 'ngStyle', component: DiretivaNgStyleComponent },
-  { path: 'ngdMoel', component: DiretivaNgModelComponent },
+  { path: 'ngModel', component: DiretivaNgModelComponent },
   { path: 'ngSwitch', component: DiretivaNgSwitchComponent },
   { path: 'ngIf', component: DiretivaNgIfComponent },
   { path: 'exemploPipes', component: ExemploPipesComponent },
   { path: 'exemploMicroondas', component: ExemploMicroondasComponent },
-  { path: 'exemploPai->Filho', component: ExemploPaiFilhoComponent },
-  { path: 'exemploFilho->Pai', component: ExemploFilhoPaiComponent },
-  { path: 'exemploServices', component: ExemploServicesComponent },
+  { path: 'exemploPai->Filho', component: CpPaiComponent },
+  { path: 'exemploFilho->Pai', component: CpPaiComponent2 },
+  { path: 'exemploServices', component: CpAgrupadorComponent },
+  { path: 'atvModulos', component: CpTelaComponent }
 ];
 
 @NgModule({

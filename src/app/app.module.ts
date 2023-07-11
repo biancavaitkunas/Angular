@@ -20,6 +20,10 @@ import { ExemploFilhoPaiComponent } from './exemplo-filho-pai/exemplo-filho-pai.
 import { ExemploServicesComponent } from './exemplo-services/exemplo-services.component';
 import { InvertePipe } from './inverte.pipe';
 import { ConverteTempoPipe } from './converte-tempo.pipe';
+import { MdPaiFilhoModule } from './md-pai-filho/md-pai-filho.module';
+import { MdFilhoPaiModule } from './md-filho-pai/md-filho-pai.module';
+import { MdServiceModule } from './md-service/md-service.module';
+import { AtvModulosModule } from './atv-modulos/atv-modulos.module';
 
 @NgModule({
   declarations: [
@@ -39,9 +43,17 @@ import { ConverteTempoPipe } from './converte-tempo.pipe';
     ExemploFilhoPaiComponent,
     ExemploServicesComponent,
     InvertePipe,
-    ConverteTempoPipe,
+    ConverteTempoPipe    
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    FormsModule, 
+    MdPaiFilhoModule,
+    MdFilhoPaiModule,
+    MdServiceModule,
+    AtvModulosModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
