@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./diretiva-ng-style.component.scss']
 })
 export class DiretivaNgStyleComponent {
-  public largura : number = 100;
+
+  public borda: number = 0;
+  public arredondada: string = "5px"
+
+  public arredonda() {
+    this.borda += 10;
+    this.arredondada= this.borda+"px";
+
+  }
+  /*public largura : number = 100;
   public larguraStr : string = "100px"
 
   aumenta(){
@@ -17,5 +26,5 @@ export class DiretivaNgStyleComponent {
   diminui(){
     this.largura -= 50;
     this.larguraStr = this.largura+"px";
-  }
+  }*/
 }

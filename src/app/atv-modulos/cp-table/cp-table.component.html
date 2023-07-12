@@ -5,12 +5,16 @@
       <tr>
         <th>Remédio</th>
         <th>Preço</th>
+        <th>Carregar</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of lista">
+      <tr *ngFor="let item of lista; let i = index">
         <td>{{item.nome}}</td>
         <td>{{item.valor}}</td>
+        <td>
+          <button (click)="clickRemedio(i)" class="carregar">^</button>
+        </td>
       </tr>
     </tbody>
 

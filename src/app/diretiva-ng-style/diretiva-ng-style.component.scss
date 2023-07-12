@@ -3,9 +3,11 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  background-color: rgb(222, 250, 215);
+  border-top: 5%;
 }
 .caixa{
-    background-color: blueviolet;
+    background-color: rgb(248, 247, 248);
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 15px;
