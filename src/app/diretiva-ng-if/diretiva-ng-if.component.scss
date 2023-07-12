@@ -1,52 +1,92 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
 
-.container{
-    display: flex;
+.container {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #bfe9b9;
+  box-shadow: 2px 0px 1.5px 0px #bebbbb;
+  border-radius: 3px;
+  padding: 1em;
+  border-top: 25px;
+  margin-top: 50px;
+  font-family: 'Century Gothic', sans-serif;
+  text-align: center;
 
 }
 
+h1 {
+  color: white;
+  font-size: 20px;
+  border-bottom: 1px #f0eded solid;
+
+}
+
+.botoes {
+  display: flex;
+  margin-left: 20%;
+}
+
+.boxIf{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #9ec299;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*.imagens {
+  width: 200px;
+  //margin-left: 700px;
+  margin-top: 50px;
+  margin-right: 20%;
+}*/
+
 button {
-    padding: 8px 10px;
-    border-radius: 5px;
-    font-family: 'Century Gothic', sans-serif;
-    display: flex;
-    position: relative;
-    margin-left: 500px;
-    margin-top: 50px;
-  }
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  margin-right: 10px;
+  margin-top: 20px;
+  cursor: pointer;
 
-  .divInstagram{
-    background-color: rgb(236, 124, 199);
+}
 
-  }
+.divInstagram {
+  background-color: rgb(213, 164, 197);
 
-  .divWhatsApp{
-    background-color: rgb(87, 189, 92);
+}
 
-  }
+.divWhatsApp {
+  background-color: rgb(137, 175, 139);
 
-  .divTwitter{
-    background-color: rgb(105, 160, 197);
+}
 
-  }
+.divTwitter {
+  background-color: rgb(105, 160, 197);
 
-  .divLinkedin{
-    background-color: rgb(13, 72, 184);
+}
 
-  }
+.divLinkedin {
+  background-color: rgb(68, 97, 150);
 
-  .imagem{
+}
+
+.imagem{
     width: 200px;
-    margin-left: 700px;
-    margin-top: 50px;
-
+    margin-top: 20px;
   }
 
-  .link{
-    margin-left: 700px;
-    margin-top: 70px;
-  }
+.link {
+  //margin-left: 700px;
+  margin-top: 70px;
+  background-color: #8ac383;
+}
 
 
 
@@ -84,5 +124,3 @@ button {
     display: flex;
     align-content: space-between;
   }*/
-
-  

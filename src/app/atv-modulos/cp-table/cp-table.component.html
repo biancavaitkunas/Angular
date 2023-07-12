@@ -1,0 +1,18 @@
+<div class="container">
+  <table>
+
+    <thead>
+      <tr>
+        <th>Remédio</th>
+        <th>Preço</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of lista">
+        <td>{{item.nome}}</td>
+        <td>{{item.valor}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

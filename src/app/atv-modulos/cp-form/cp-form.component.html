@@ -1,0 +1,11 @@
+<div class="container">
+
+  <label class="label">Remédio: </label>
+  <input type="text" #inputProp class="input" placeholder="Nome"/>
+
+  <label class="label">Valor: </label>
+  <input type="text" #inputProp2 class="input valor" placeholder="Valor"/>
+
+  <button (click)="addRemedio(inputProp.value, inputProp2.value)" class="adicionar">Adicionar</button>
+
+</div>

@@ -27,8 +27,8 @@ export class ExemploMicroondasComponent {
 
   public addTempo(escolhido: number){
     if(this.tempo = escolhido){
-      //this.restante += escolhido;
-      this.restante = this.restante.toString() + escolhido.toString();
+      this.restante += escolhido;
+      // this.restante = this.restante.toString() + escolhido.toString();
     }
 
   }
