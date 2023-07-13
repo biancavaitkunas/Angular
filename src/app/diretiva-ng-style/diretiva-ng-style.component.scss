@@ -5,11 +5,41 @@
   flex-direction: column;
   background-color: rgb(222, 250, 215);
   border-top: 5%;
+  align-items: center;
+  margin-top: 40px;
 }
 .caixa{
-    background-color: rgb(248, 247, 248);
+    background-color: rgb(235, 215, 235);
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid rgb(230, 211, 211);
     border-radius: 15px;
     height: 300px;
+    width: 300px;
   }
+
+  h1 {
+    font-family: "Century-Gothic";
+    color: #b592b1;
+  }
+
+  .button {
+    margin-top: 15px;
+    display: block;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #b592b1;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 20px;
+    font-family: "Century Gothic";
+    border-radius: 6px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #684963;
+    transition: all 0.3s;
+}

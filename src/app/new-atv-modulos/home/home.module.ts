@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CpTelaComponent } from './components/cp-tela/cp-tela.component';
 import { CpTableComponent } from './components/cp-table/cp-table.component';
 import { CpFormComponent } from './components/cp-form/cp-form.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { CpFormComponent } from './components/cp-form/cp-form.component';
     CpFormComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

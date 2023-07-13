@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ExemploServiceService } from '../services/exemplo-service.service';
 
 
@@ -7,8 +7,8 @@ import { ExemploServiceService } from '../services/exemplo-service.service';
   templateUrl: './cp-form.component.html',
   styleUrls: ['./cp-form.component.scss'],
 })
-export class CpFormComponent implements OnInit {
-
+export class CpFormComponent /*implements OnInit*/ {
+  
   public nome: string = '';
   public valor: string = '';
 
