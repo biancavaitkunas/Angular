@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CpTelaComponent } from './cp-tela/cp-tela.component';
 import { CpFormComponent } from './cp-form/cp-form.component';
 import { CpTableComponent } from './cp-table/cp-table.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { CpTableComponent } from './cp-table/cp-table.component';
     CpTableComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     CpTelaComponent

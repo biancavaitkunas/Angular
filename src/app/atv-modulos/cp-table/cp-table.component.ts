@@ -7,18 +7,16 @@ import { Medicamento } from '../models/medicamento';
   templateUrl: './cp-table.component.html',
   styleUrls: ['./cp-table.component.scss']
 })
-export class CpTableComponent /*implements OnInit*/{
+export class CpTableComponent implements OnInit{
 
-  @Output() public emiteEventoForm = new EventEmitter;
+  //@Output() public emiteEventoForm = new EventEmitter;
 
-  
-
-  public lista: Array<{nome: string, valor: string}> = [];
+  public lista: Medicamento[] = [];
 
   constructor(private service: ExemploServiceService){}
 
-  public clickRemedio(p: any){
-    console.log(p);
+  public clickRemedio(event: number){
+    this.service.getMedicamento(event)
     
   }
 

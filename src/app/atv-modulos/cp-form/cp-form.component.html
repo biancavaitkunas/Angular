@@ -1,11 +1,11 @@
 <div class="container">
 
   <label class="label">Remédio: </label>
-  <input type="text" #inputProp class="input" placeholder="Nome"/>
+  <input type="text" class="input" #inputNome placeholder="Nome" [(ngModel)]="remedio.nome"/>
 
   <label class="label">Valor: </label>
-  <input type="text" #inputProp2 class="input valor" placeholder="Valor"/>
+  <input type="text" class="input valor" #inputValor placeholder="Valor" [(ngModel)]="remedio.valor"/>
 
-  <button (click)="addRemedio(inputProp.value, inputProp2.value)" class="adicionar">Adicionar</button>
+  <button (click)="addRemedio(inputNome.value, inputValor.value)" class="adicionar">Adicionar</button>
 
 </div>

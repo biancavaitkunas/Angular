@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ExemploServiceService } from '../services/exemplo-service.service';
+import { Medicamento } from '../models/medicamento';
 
 
 @Component({
@@ -7,31 +8,25 @@ import { ExemploServiceService } from '../services/exemplo-service.service';
   templateUrl: './cp-form.component.html',
   styleUrls: ['./cp-form.component.scss'],
 })
-export class CpFormComponent /*implements OnInit*/ {
-  
+export class CpFormComponent implements OnInit {
+
   public nome: string = '';
   public valor: string = '';
 
-  public remedio: any = {
-    nome: '',
-    valor: ''
-  }
+  public remedio: any = {}
 
-  constructor(private service: ExemploServiceService) {} //injecao de dependencia do service
+  constructor(private service: ExemploServiceService) { } //injecao de dependencia do service
 
   public addRemedio(nome: string, valor: string) {
-    return this.service.adiciona(nome, valor);
+    this.service.adiciona(nome, valor);
+    this.limpaLista();
   }
 
-  /*private limparCampos() {
-    this.nome = '';
-    this.valor = '';
-  }*/
+  limpaLista() {
+    this.remedio = {};
+  }
 
   ngOnInit(): void {
-    this.service.emitEvent.subscribe({
-      next: (res: string) => (this.nome = res, this.valor = res),
-      error: (err: string) => (this.nome = '', this.valor = ''), 
-    });
+    this.service.emitMedicamentoEvent.subscribe((medicamento: Medicamento) => { this.remedio = medicamento });
   }
 }
